@@ -13,6 +13,13 @@ h2 {
 	width: 100%;
 }
 
+h2 span {
+	color: white;
+	padding: 10px;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);
+}
+
 img#bg{
    position: fixed;
    top: 0;
