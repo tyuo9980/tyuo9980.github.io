@@ -2,6 +2,21 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+.image {
+	position: relative;
+}
+
+h2 {
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+}
+
 img#bg{
-   border:none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   min-width: 100%;
+   min-height: 100%;
 }
