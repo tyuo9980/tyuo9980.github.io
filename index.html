@@ -3,10 +3,20 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+		<script>
+			//smooth anchor scrolling
+			$('a').click(function(){
+			    $('html, body').animate({
+			        scrollTop: $( $.attr(this, 'href') ).offset().top
+			    }, 500);
+			    return false;
+			});
+		</script>
 	</head>
 
-	<div class="header">
-
+	<div class="header" id="header">
+	<a href=
 	</div>
 
 	<body>
@@ -19,7 +29,7 @@
 		</div>
 
 		<div class="content">
-			<div class="about">
+			<div class="about" id="about">
 				<p>
 					About me: <br>
 					I am currently a student at the University of Waterloo studying Software Engineering. <br> 
@@ -28,13 +38,13 @@
 				</p>
 			</div>
 
-			<div class="projects">
+			<div class="projects" id="projects">
 
 			</div>
 		</div>
 	</body>
 
-	<div class="footer">
+	<div class="footer" id="footer">
 	
 	</div>
 </html>
