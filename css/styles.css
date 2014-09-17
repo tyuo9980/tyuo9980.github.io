@@ -34,18 +34,15 @@ body {
 	box-shadow: 3px;
 }
 
-h2 {
-	position: absolute;
-	top: 150px;
-	left: 70%;
-	width: 100%;
-	text-align: right;
-}
-
-h2 span {
+h2 span #name{
 	font-size: 60px;
 	color: white;
 	padding: 10px;
 	background: rgb(0, 0, 0);
 	background: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 150px;
+	left: 70%;
+	width: 100%;
+	text-align: right;
 }

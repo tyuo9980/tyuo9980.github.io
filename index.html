@@ -12,17 +12,27 @@
 			    }, 500);
 			    return false;
 			});
+
+			//fade in div
+			$(document).scroll(function () {
+			    var y = $(this).scrollTop();
+			    if (y > 800) {
+			        $('.bottomMenu').fadeIn();
+			    } else {
+			        $('.bottomMenu').fadeOut();
+			    }
+			});
 		</script>
 	</head>
 
 	<div class="header" id="header">
-	<a href=
+
 	</div>
 
 	<body>
 		<div class="image">
 			<h2>
-				<span>
+				<span id="name">
 					Peter <br> "theCodeBot" <br> Li
 				</span>
 			</h2>
@@ -31,10 +41,9 @@
 		<div class="content">
 			<div class="about" id="about">
 				<p>
-					About me: <br>
-					I am currently a student at the University of Waterloo studying Software Engineering. <br> 
-					I am a competitive FPS gamer and wreck all dem noobs. <br>
-					My favorite food is noodles.
+				<h2> About me </h2> <br>
+					
+					
 				</p>
 			</div>
 
