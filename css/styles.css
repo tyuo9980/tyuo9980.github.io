@@ -6,6 +6,31 @@ body {
 	background: #222222;
 }
 
+.project-collection {
+	width: 100%;
+	margin: auto;
+}
+
+.project-item {
+	border: 1px outset #3f8fd2;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom: 30px;
+	height: 250px;
+	width: 250px;
+	cursor: pointer;
+	color: #fefefe;
+	background-color: #3f8fd2; 
+	float: left;
+	text-align: center;
+	transition: background-color 0.15s ease;
+}
+
+.project-item:hover {
+	color: #3f8fd2;
+	background-color: #fefefe;
+}
+
 .contact-button {
 	font-size: 70px;
 	float: left;
