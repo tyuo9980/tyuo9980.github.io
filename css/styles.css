@@ -6,6 +6,11 @@ body {
 	background: #222222;
 }
 
+.navbar-default {
+	background: #fff;
+	background-color: #fff;
+}
+
 .image {
 	position: absolute;
 	width: 100%;
