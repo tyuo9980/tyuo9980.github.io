@@ -31,6 +31,10 @@
 			var i = 0;
 
 			var captionTimer = setInterval(function(){
+				newCaption();
+			}, 5000);
+
+			function newCaption(){
 				$(".captions").fadeToggle(300);
 				$(".captions").html(captions[i]);
 				$(".captions").fadeToggle(300);
@@ -40,7 +44,9 @@
 				if (i == captions.length){
 					i = 0;
 				}
-			}, 5000);
+			}
+
+			newCaption();
 		</script>
 
 
