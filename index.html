@@ -23,14 +23,9 @@
 
 		<script type="text/javascript">
 			var captions = ["Software Engineer", "Hacker", "Gamer", "Musician", "おたく"];
-
-			var captionTimer = setInterval(function(){
-				getCaption();
-			}, 2000);
-
 			var i = 0;
 
-			function getCaption() {
+			var captionTimer = setInterval(function(){
 				console.log(i);
 
 				i++;
@@ -42,7 +37,7 @@
 				$(".captions").fadeToggle(300);
 				$(".captions").html(captions[i]);
 				$(".captions").fadeToggle(300);
-			}
+			}, 2000);
 		</script>
 
 
