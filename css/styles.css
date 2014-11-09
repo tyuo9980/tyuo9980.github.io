@@ -9,6 +9,7 @@ body {
 .contact-button {
 	font-size: 70px;
 	float: left;
+	margin-right: 15px;
 }
 
 .image {
