@@ -59,29 +59,11 @@ body {
 .content {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
-	margin-bottom: 62px
-}
-
-.button {
-	padding: 4px 12px;
-	background-color: #f0f0f0;
-	-o-transition: background-color .2s ease-in; 
-    -moz-transition: background-color .2s ease-in;
-    -webkit-transition: background-color .2s ease-in; 
-    transition: background-color .2s ease-in; 
+	margin-bottom: 70px;
 }
 
 .links {
 	text-align: center;
-	color: #222;
-}
-
-.button:hover {
-    background-color: #e5e5e5;    
-}
-
-.button:active {
-    background-color: #ccc;
 }
 
 h2 span #name{
