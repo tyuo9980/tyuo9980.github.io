@@ -29,6 +29,7 @@
 			}, 2000);
 
 			var i = 0;
+			
 			function getCaption() {
 				i++;
 				if (i = captions.length){
@@ -37,6 +38,7 @@
 
 				$(".captions").fadeToggle(300);
 				$(".captions").html(captions[i]);
+				$(".captions").fadeToggle(300);
 			}
 		</script>
 
@@ -69,8 +71,8 @@
 		<div class="circular" id="profile-image">
 		</div>
 
-		<span class="captions">
-		</span>
+		<center class="captions">
+		</center>
 
 		<div class="links">
 			<span class="button">
