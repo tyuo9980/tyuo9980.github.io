@@ -3,6 +3,7 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
+		<link rel="icon" sizes="16x16" href="/img/icon.png">
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
@@ -19,6 +20,27 @@
 			ga('create', 'UA-56499831-1', 'auto');
 			ga('send', 'pageview');
 		</script>
+
+		<script type="text/javascript">
+			var captions = ["Software Engineer", "Hacker", "Gamer", "Musician", "おたく"];
+
+			var captionTimer = setInterval(function(){
+				getCaption();
+			}, 2000);
+
+			var i = 0;
+			function getCaption() {
+				i++;
+				if (i = captions.length){
+					i = 0;
+				}
+
+				$(".captions").fadeToggle(300);
+				$(".captions").html(word);
+			}
+		</script>
+
+
 	</head>
 
 	<body>
@@ -44,24 +66,33 @@
 			</div>
 		</div>
 
+		<div class="circular" id="profile-image">
+		</div>
+
+		<span class="captions">
+		</span>
+
+		<div class="links">
+			<span class="button">
+				<i class="fa file-text"></i>
+				Resume
+			</span>
+		</div>
+
 		<div class="content">
 			<div class="container">
-				<div id="description">
-					<h2>
-						About Me
-					</h2>
-					<p>
-						Hi, I'm Peter Li, an aspiring software engineer studying at the University of Waterloo. I was introduced to programming in grade 7 through games by trying to build third party tools and cheats for them. I love to play games competitively, and in high school I was able to finally design and develop my own from scratch. I enjoy developing software that people enjoy to use, whether it be solving a problem or letting them enjoy a few minutes of their time. I also enjoy to overcome challenges and learn about any new technology I encounter.
-						<br>
-						<br>
-						Aside from programming and games, I enjoy playing Piano, listening to Jazz, playing table tennis, and watching anime and those crazy Japanese variety shows. I'm also a crazy competitive hardcore FPS gamer (just <i>try</i> to 1v1 me in CoD4).
-						<br>
-						<br>
-						Take a look at my projects and resume. And if you're interested, you can contact me at tyuo9980@gmail.com.
-					</p>
-				</div>
-				<div class="circular" id="profile-image">
-				</div>
+				<h2>
+					About Me
+				</h2>
+				<p>
+					Hi, I'm Peter Li, an aspiring software engineer studying at the University of Waterloo. I was introduced to programming in grade 7 through games by trying to build third party tools and cheats for them. I love to play games competitively, and in high school I was able to finally design and develop my own from scratch. I enjoy developing software that people enjoy to use, whether it be solving a problem or letting them enjoy a few minutes of their time. I also enjoy to overcome challenges and learn about any new technology I encounter.
+					<br>
+					<br>
+					Aside from programming and games, I enjoy playing Piano, listening to Jazz, playing table tennis, and watching anime and those crazy Japanese variety shows. I'm also a crazy competitive hardcore FPS gamer (just <i>try</i> to 1v1 me in CoD4).
+					<br>
+					<br>
+					Take a look at my projects and resume. And if you're interested, you can contact me at tyuo9980@gmail.com.
+				</p>
 			</div>
 		</div>
 

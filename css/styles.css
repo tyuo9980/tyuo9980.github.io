@@ -19,14 +19,19 @@ body {
 	background-size: cover;
 }
 
-.circular #profile-image {
-	width: 200px;
-	height: 200px;
+.circular#profile-image {
+	width: 200;
+	height: 200;
 	border-radius: 100px;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
-	background-image: url('../img/me.jpg') no-repeat;
-	float: right;
+	background: url('../img/me.jpg') no-repeat;
+	background-size: cover;
+	margin: auto
+}
+
+.captions {
+	text-align: center;
 }
 
 #description {
@@ -42,7 +47,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	background-color: #333;
 	color: #bbb;
-	height: 80px;
+	height: 62px;
 	bottom: 0;
 	position:fixed;
 	width: 100%;
@@ -53,6 +58,26 @@ body {
 	font-weight: 300;
 }
 
+.button {
+	padding: 4px 12px;
+	background-color: #f0f0f0;
+	-o-transition: background-color .2s ease-in; 
+    -moz-transition: background-color .2s ease-in;
+    -webkit-transition: background-color .2s ease-in; 
+    transition: background-color .2s ease-in; 
+}
+
+.links {
+	text-align: center;
+}
+
+.button:hover {
+    background-color: #e5e5e5;    
+}
+
+.button:active {
+    background-color: #ccc;
+}
 
 h2 span #name{
 	font-size: 60px;
