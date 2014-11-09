@@ -26,17 +26,15 @@
 			var i = 0;
 
 			var captionTimer = setInterval(function(){
+				$(".captions").fadeToggle(300);
+				$(".captions").html(captions[i]);
+				$(".captions").fadeToggle(300);
+				
 				i++;
 				
 				if (i == captions.length){
 					i = 0;
 				}
-
-
-				$(".captions").html(captions[i]);
-				$(".captions").fadeToggle(300);
-				$(".captions").fadeToggle(300);
-				
 			}, 5000);
 		</script>
 
