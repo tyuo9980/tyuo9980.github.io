@@ -13,9 +13,7 @@ body {
 
 .project-item {
 	border: 1px outset #3f8fd2;
-	margin-right: 15px;
-	margin-left: 15px;
-	margin-bottom: 30px;
+	margin: 15px;
 	height: 250px;
 	width: 250px;
 	cursor: pointer;
