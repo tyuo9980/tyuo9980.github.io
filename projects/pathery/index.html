@@ -58,10 +58,10 @@
 				<a href="https://github.com/tyuo9980/Pathery" target="_blank">Github Repo</a><br>
 
 				<p>
-					Based on Pathery.com, a breakdown of classic tower defence where the objective is to find the longest path.
+					Based on Pathery.com, a breakdown of classic tower defence where the objective is to find the longest path. A map consists of a grid with different types of tiles on each. There is always a start tile and end tile and the computer computes the shortest path. The player is given a number of wall tiles to lengthen the path. Your objective is to find the longest path.
 				</p>
 				<p>
-					
+					I chose to retrieve map data from the original site. Every map was stored as a JSON object and had a lot of metadata that I didn't need. I built a custom JSON parser to find the parameters that I needed. Breadth First Search was used to find the shortest path from point A to point B. So for maps that had checkpoints, I simply called the BFS function from checkpoint to checkpoint and added the totals. The creater of Pathery, Snap, was nice enough to send me all the image files I needed. That saved me a lot of time for the aesthetics portion of the project.
 				</p>
 			</div>
 		</div>
