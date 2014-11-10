@@ -62,7 +62,7 @@
 					KICKS is a clone based on the popular arcade game QIX. The premise of the game is to cover the area of the game field by creating polygons that cover it up. Once you cover at least 75%, you beat the level.
 				</p>
 				<p>
-					Creating an exact clone of the original game is somewhat difficult. The enemy that moves around the map isn't a single entity, but a 3d bar that spins and moves around being projected onto a 2D plane. Instead of trying to replicate that, I went for a simple circle that bounces around in a random direction after colliding with a wall. The difficulty with this game is to calculate the area covered after a polygon is created. I thought of 2 approaches to solving this problem. The mathematical way is to keep track of the vertices and subtract or add area based on the previous vertices. What I did was use the floodfill algorithm. This was a much simpler way of solving the problem, althought it might be a bit slower.
+					Creating an exact clone of the original game is somewhat difficult. The enemy that moves around the map isn't a single entity, but multiple bars that spin, move, and follow each other. Instead of trying to replicate that, I went for a simple circle that bounces around in a random direction after colliding with a wall. The difficult part of making this game is to calculate the area covered after a polygon is created. I thought of 2 approaches to solving this problem. The mathematical way is to keep track of the vertices and subtract or add area based on the previous vertices, thus breaking them down into simpler shapes. What I did was use the floodfill algorithm. This was a much simpler way of solving the problem, althought it might be a bit slower.
 				</p>
 			</div>
 		</div>
