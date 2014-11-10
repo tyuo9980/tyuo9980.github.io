@@ -91,15 +91,6 @@ body {
 	text-align: center;
 }
 
-h2 span #name{
-	font-size: 60px;
-	color: white;
-	padding: 10px;
-	background: rgb(0, 0, 0);
-	background: rgba(0, 0, 0, 0.7);
-	position: absolute;
-	top: 150px;
-	left: 70%;
-	width: 100%;
-	text-align: right;
+.subheader {
+	font-size: 11pt;
 }
