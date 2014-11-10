@@ -6,11 +6,6 @@ body {
 	background: #222222;
 }
 
-.project-collection {
-	width: 100%;
-	margin: auto;
-}
-
 .project-item {
 	border: 1px outset #3f8fd2;
 	margin: 15px;
@@ -89,8 +84,4 @@ body {
 
 .links {
 	text-align: center;
-}
-
-.subheader {
-	font-size: 11pt;
 }
