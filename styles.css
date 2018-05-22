@@ -46,9 +46,9 @@ h2 {
 }
 
 .content{
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
-    padding: 70px 0 100px 0;
+    padding: 70px 50px 100px 50px;
 }
 
 .btn{
@@ -89,7 +89,7 @@ h2 {
     border-left: 5px solid #65a5db;
     border-top: 5px solid #65a5db;
     height: 150px;
-    width: 250px;
+    width: 225px;
     cursor: pointer;
     box-sizing: border-box;
     color: #65a5db;
