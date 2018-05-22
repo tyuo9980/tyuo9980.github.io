@@ -2,21 +2,19 @@
 	<head>
 		<title>Peter Li</title>
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="/css/styles.css">
+		<script
+		  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+		  crossorigin="anonymous">
+		</script>
+
 		<link href='http://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
-		<link rel="icon" sizes="16x16" href="/img/icon.png">
+		<link href="https://fonts.googleapis.com/css?family=Heebo:900" rel="stylesheet">
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/demo.css">
-		<link rel="stylesheet" type="text/css" href="css/component.css">
-		<script src="js/modernizr.custom.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="scripts.js"></script>
 
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -27,81 +25,119 @@
 			ga('create', 'UA-56499831-1', 'auto');
 			ga('send', 'pageview');
 		</script>
-
-		<script type="text/javascript">
-			var captions = ["Software Engineer", "Hacker", "Gamer", "Musician"];
-			var i = 1;
-
-			var captionTimer = setInterval(function(){
-				newCaption();
-			}, 5000);
-
-			function newCaption(){
-				$(".captions").fadeToggle(0);
-				$(".captions").html(captions[i]);
-				$(".captions").fadeToggle(300);
-				
-				i++;
-				
-				if (i == captions.length){
-					i = 0;
-				}
-			}
-		</script>
 	</head>
 
 	<body>
-		<div class="navbar navbar-default" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="/" style="font-size:24pt"><span style="color:#3f8fd2">Peter</span> Li</a>
+		<div class="section odd">
+			<div class="content">
+				<h1>
+					Hi<span style="color:#3f8fd2">,</span>
+				</h1>
+				<div class="short" style="margin-bottom: 8px">
+					I'm Peter, a software engineer and competitive gamer. 
 				</div>
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="/projects/"><span class="fa fa-code"></span>&nbsp;&nbsp;Projects</a></li>
-						<li><a href="/resume.pdf" target="_blank"><span class="fa fa-file-text-o"></span>&nbsp;&nbsp;Resume</a></li>
-						<li><a href="/contact/"><span class="fa fa-at"></span>&nbsp;&nbsp;Contact</a></li>
-					</ul>
+
+				<span id="desc-btn" class="btn">
+					Read more
+				</span>
+
+				<div id="desc" class="hidden">
+					<div id="desc-txt">
+						<p>
+							Games have had a profound influence on me and it was what introduced me to programming. When I was 13 I started building third party tools and cheats, most notably for Maplestory and Kartrider and in high school I was finally able to design and develop my own original game Bubblescape from scratch. 
+						</p>
+						<p>
+							I am incredibly competitive when it comes to games. I was part of an amateur CoD:MW2 team in a regional ladder but now I am occupied with League of Legends.
+						</p>
+						<p>
+							Aside from programming and games, I enjoy watching anime and those crazy Japanese variety shows, playing Piano, and listening to music.
+						</p>
+					</div>
 				</div>
+
+				<a id="resume" class="btn" href="resume.pdf">My Resume</a>
 			</div>
 		</div>
 
-		<div class="circular" id="profile-image">
-		</div>
-
-		<center class="captions">
-			Software Engineer
-		</center>
-
-		<div class="links">
-			<nav class="cl-effect-1" id="cl-effect-1">
-				<a href="/projects/"><span class="fa fa-code"></span>&nbsp;Projects</a>
-				<a href="/resume.pdf"><span class="fa fa-file-text-o"></span>&nbsp;Resume</a>
-				<a href="/contact/"><span class="fa fa-at"></span>&nbsp;Contact</a>
-			</nav>
-		</div>
-
-		<div class="content">
-			<div class="container">
+		<div class="section even">
+			<div class="content">
 				<h2>
-					About Me
+					Projects
 				</h2>
-				<p>
-					Hi, I'm Peter Li, an aspiring software engineer studying at the University of Waterloo. I was introduced to programming in grade 7 through games by trying to build third party tools and cheats for them. I love to play games competitively, and in high school I was able to finally design and develop my own from scratch. I enjoy developing software that people enjoy to use, whether it be solving a problem or letting them enjoy a few minutes of their time. I also enjoy to overcome challenges and learn about any new technology I encounter.
-					<br><br>
-					Aside from programming and games, I enjoy playing Piano, listening to Jazz, playing table tennis, and watching anime and those crazy Japanese variety shows. I'm also a hardcore competitive FPS gamer (I'm always up for a 1v1).
-					<br><br>
-					Take a look at my <a href="/projects/">projects</a> and <a href="/resume.pdf">resume</a>. And if you're interested, you can contact me <a href="/contact/">here</a>.
-				</p>
+				<div class="project-collection">
+				  <a class="project-item" href="http://timewinder.gg">
+						<h4>Timewinder.gg</h4>
+						<p>League of legends match timeline statistics</p>
+					</a>
+					<a class="project-item" href="https://github.com/tyuo9980/legolegends">
+						<h4>LeGoLegends</h4>
+						<p>Riot API wrapper written in Go</p>
+					</a>
+					<a class="project-item" href="https://github.com/tyuo9980/PCPCv1.15">
+						<h4>PC Pwns Console</h4>
+						<p>Custom Java framework</p>
+					</a>
+					<a class="project-item" href="https://github.com/tyuo9980/BubblEscape">
+						<h4>BubblEscape</h4>
+						<p>An original android game with unique swipe controls</p>
+					</a>
+					<a class="project-item" href="https://github.com/tyuo9980/BipolarAnimals">
+						<h4>Bipolar Animals</h4>
+						<p>URL alias generator</p>
+					</a>
+					<a class="project-item" href="https://github.com/tyuo9980/myonnaise">
+						<h4>Myonnaise</h4>
+						<p>Gesture controlled context menu using Myo</p>
+					</a>
+					<a class="project-item" href="https://github.com/tyuo9980/Pathery">
+						<h4>Pathery</h4>
+						<p>Clone of Pathery.com</p>
+					</a>
+					<a class="project-item" href="https://github.com/tyuo9980/Steg">
+						<h4>Steganographer</h4>
+						<p>Image and text encoding tool</p>
+					</a>
+					<a class="project-item" href="https://github.com/tyuo9980/Impossibru">
+						<h4>Impossibru</h4>
+						<p>Clone of The Impossible Game</p>
+					</a>
+					<a class="project-item" href="https://github.com/tyuo9980/KICKS">
+						<h4>KICKS</h4>
+						<p>Clone of the popular arcade game QIX</p>
+					</a>
+					<a class="project-item" href="https://github.com/tyuo9980/GeometryWars">
+						<h4>Geometry Wars</h4>
+						<p>Clone of the pacisifism game mode</p>
+					</a>
+				</div>
+
 			</div>
 		</div>
 
-	
+		<div class="section odd">
+			<div class="content">
+				<h2>
+					Contact Me
+				</h2>
+				<div class="contact-button">
+					<i class="fas fa-envelope-square"></i> 
+					<a class="btn2" href="mailto:tyuo9980@gmail.com"> 
+						&nbsp;tyuo9980@gmail.com
+					</a>
+				</div>
+				<div class="contact-button">
+					<i class="fab fa-github-square"></i> 
+					<a class="btn2" href="https://github.com/tyuo9980" target="_blank"> 
+						&nbsp;github.com/tyuo9980
+					</a>
+				</div>
+				<div class="contact-button">
+					<i class="fab fa-linkedin"></i>
+					<a class="btn2" href="https://www.linkedin.com/in/tyuo9980" target="_blank">
+						&nbsp;linkedin.com/in/tyuo9980
+					</a>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

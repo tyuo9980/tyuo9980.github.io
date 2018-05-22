@@ -1,0 +1,104 @@
+html {
+    font-family: "Roboto";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+    font-size: 20px;
+}
+
+.fab, .fas{
+    font-size: 40px;
+    color: #3f8fd2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    margin: 0;
+    font-family: "Heebo";
+    font-weight: 900;
+    font-size: 100px; 
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    font-family: "Heebo";
+    font-weight: 900;
+    font-size: 30px; 
+}
+
+.section{
+    width: 100%;
+}
+
+.odd{
+    background: #f6f7f8;
+}
+.even{
+    background: #fff;
+}
+
+.content{
+    width: 1000px;
+    margin: auto;
+    padding: 70px 0 100px 0;
+}
+
+.btn{
+    font-weight: bold; 
+}
+.btn:hover{
+    cursor: pointer;
+    color: #999;
+}
+.btn2:hover{
+    color: #999;
+}
+
+#desc-txt{
+    overflow: auto;
+}
+#desc{
+    transition-duration: 0.5s;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.hidden{
+    height: 0;
+}
+
+.contact-button{
+    display: flex;
+    align-items: center;
+}
+
+.project-collection{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    border-left: 5px solid #65a5db;
+    border-top: 5px solid #65a5db;
+    height: 150px;
+    width: 250px;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #65a5db;
+    background-color: #fff;
+    text-align: center;
+    transition: background-color 0.15s ease;
+}
+
+.project-item:hover {
+    color: #fff;
+    background-color: #65a5db; 
+}
