@@ -86,13 +86,12 @@ h2 {
 }
 
 .project-item {
-    
     height: 150px;
     width: 250px;
     cursor: pointer;
     box-sizing: border-box;
     color: #3f8fd2;
-    background-color: #fff;
+    background-color: #f6f7f8;
     text-align: center;
     transition: background-color 0.15s ease;
 }
