@@ -3,6 +3,7 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    text-size-adjust: none;
 }
 
 body {
@@ -81,13 +82,12 @@ h2 {
 }
 
 .project-collection{
-    display:flex;
-    flex-wrap: wrap;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
 }
 
 .project-item {
-    height: 150px;
-    width: 250px;
+    padding: 0 15px;
     cursor: pointer;
     box-sizing: border-box;
     color: #3f8fd2;
